@@ -1,6 +1,7 @@
 import turtle
+# PROGRAMA SONY GOMEZ ENRIQUE GONZALEZ 31456812 SONY GOMEZ 31268878
 
-#triángulo dado un conjunto de vértices, un color y un objeto Turtle.
+# triángulo dado un conjunto de vértices, un color y un objeto Turtle.
 def dibujar_triangulo(vertices, color, tortuga):
     # color de relleno del triángulo
     tortuga.fillcolor(color)
@@ -27,7 +28,7 @@ def obtener_punto_medio(punto1, punto2):
 # Cada nivel de recursión reduce la profundidad y subdivide el triángulo en partes más pequeñas.
 def sierpinski(vertices, profundidad, tortuga):
     # lista de colores para cada nivel de profundidad
-    colores = ['purple', 'cyan', 'lime', 'pink', 'gold', 'orange', 'aqua']
+    colores = ['#8A2BE2', '#5F9EA0', '#FF4500', '#2E8B57', '#DAA520', '#FF6347', '#4682B4']
     # triángulo con el color correspondiente al nivel de profundidad actual
     dibujar_triangulo(vertices, colores[profundidad], tortuga)
     
@@ -67,4 +68,3 @@ def main():
     ventana.exitonclick()
 
 main()
-
